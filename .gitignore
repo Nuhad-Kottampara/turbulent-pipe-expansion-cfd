@@ -1,0 +1,19 @@
+# OpenFOAM time directories and simulation results
+/[1-9]*/
+!/0/
+
+# Solver logs
+log.*
+
+# Generated ParaView files
+*.OpenFOAM
+*.foam
+*.btr
+
+# Post-processing outputs
+postProcessing/
+
+# Editor and operating-system files
+*~
+*.swp
+.DS_Store
