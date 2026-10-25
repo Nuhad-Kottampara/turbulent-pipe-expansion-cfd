@@ -7,6 +7,11 @@
 # Post-processing results
 **/postProcessing/
 
+# Generated OpenFOAM mesh
+**/constant/polyMesh/
+
+# VTK exports
+**/VTK/
 # Generated ParaView files
 *.OpenFOAM
 *.foam
