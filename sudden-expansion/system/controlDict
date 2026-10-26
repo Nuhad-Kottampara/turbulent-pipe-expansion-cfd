@@ -18,13 +18,13 @@ deltaT          1;
 writeControl    timeStep;
 writeInterval   100;
 
-functions
+/*functions
 {
     yPlus
     {
         type            yPlus;
-        libs            (fieldFunctionObjects);
+        libs            ("fieldFunctionObjects");
         executeControl  writeTime;
         writeControl    writeTime;
     }
-}
+}*/

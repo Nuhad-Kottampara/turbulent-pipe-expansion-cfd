@@ -26,4 +26,8 @@ boundaryField
     {
         type            zeroGradient;
     }
+    expansionShoulder
+    {   
+        type    zeroGradient;   
+    }
 }

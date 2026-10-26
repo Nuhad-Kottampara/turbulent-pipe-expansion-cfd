@@ -26,5 +26,9 @@ boundaryField
     {
         type            noSlip;
     }
+    expansionShoulder
+    {
+        type    noSlip;
+    }
 
 }

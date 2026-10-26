@@ -29,4 +29,10 @@ boundaryField
         type            omegaWallFunction;
         value           uniform 77.5;
     }
+    // in 0/omega
+    expansionShoulder
+    {
+        type        omegaWallFunction;
+        value       uniform 77.5;
+    }
 }
