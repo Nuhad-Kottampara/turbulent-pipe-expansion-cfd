@@ -17,6 +17,9 @@
 *.foam
 *.btr
 
+# ParaView visualization state files
+*.pvsm
+
 # Editor and operating-system files
 *~
 *.swp
