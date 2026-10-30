@@ -1,7 +1,7 @@
 import re
 import matplotlib.pyplot as plt
 
-log_file = "log.simpleFoam"
+log_file = "log.cleanRun"
 
 fields = ["Ux", "Uy", "Uz", "p", "omega", "k"]
 residuals = {field: [] for field in fields}
@@ -17,21 +17,24 @@ with open(log_file, "r") as file:
             if match:
                 residuals[field].append(float(match.group(1)))
 
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(11, 7))
 
 for field, values in residuals.items():
     if values:
         plt.semilogy(
             range(1, len(values) + 1),
             values,
-            label=field
+            label=field,
+            linewidth=1.2
         )
 
 plt.xlabel("Outer iteration")
 plt.ylabel("Initial residual")
 plt.title("Residual History — Sudden Expansion CFD")
-plt.grid(True, which="both", linestyle="--", alpha=0.5)
+
+plt.grid(True, which="both", linestyle="--", alpha=0.4)
 plt.legend()
 plt.tight_layout()
+
 plt.savefig("residualHistory.png", dpi=200)
 plt.show()
