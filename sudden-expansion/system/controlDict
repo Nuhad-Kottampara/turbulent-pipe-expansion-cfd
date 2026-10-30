@@ -7,7 +7,7 @@ FoamFile
 
 application     simpleFoam;
 
-startFrom       latestTime;
+startFrom       startTime;
 startTime       0;
 
 stopAt          endTime;
@@ -16,7 +16,7 @@ endTime         2000;
 deltaT          1;
 
 writeControl    timeStep;
-writeInterval   100;
+writeInterval   50;
 
 /*functions
 {

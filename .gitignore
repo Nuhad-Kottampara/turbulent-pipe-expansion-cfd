@@ -24,3 +24,9 @@
 *~
 *.swp
 .DS_Store
+
+# MPI decomposition output
+**/processor[0-9]*/
+
+# Reconstructed OpenFOAM time directories
+**/[1-9]*/
