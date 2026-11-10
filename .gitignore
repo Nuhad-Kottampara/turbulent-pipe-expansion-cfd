@@ -30,3 +30,6 @@
 
 # Reconstructed OpenFOAM time directories
 **/[1-9]*/
+
+# venv 
+.venv/
