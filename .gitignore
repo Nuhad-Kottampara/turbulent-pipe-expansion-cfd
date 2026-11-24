@@ -33,3 +33,7 @@
 
 # venv 
 .venv/
+
+# German Grafikbeschreibung homework files
+HA_Grafikbeschreibung_Ux_DE.py
+HA_Geschwindigkeitsprofile_Netzvergleich_DE.png
